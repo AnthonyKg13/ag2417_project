@@ -1,7 +1,7 @@
 # AG2417 Project
 
-*Author: Lingbin Kong, Tong Mo*<br>
-2023.10 Stockholm
+*Author: Lingbin Kong, Tong Mo<br>
+2023.10 Stockholm*
 
 
 ## Instructions
