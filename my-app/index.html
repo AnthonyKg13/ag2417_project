@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Full Screen Control</title>
+    <link rel="stylesheet" href="node_modules/ol/ol.css">
+    <style>
+      * {
+      font-family: Arial;
+      }
+      html, body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row; /* This sets the main axis to be horizontal */
+        justify-content: space-between;
+      }
+      .left-panel {
+        width: 65%; /* Adjust width as needed */
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .incidents-panel {
+        background-color: #e1eaf1;
+        padding: 10px;
+      }
+      .submission-panel {
+        margin-top: 20px;
+      }
+      .right-panel {
+        width: 35%; /* Adjust width as needed */
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #ededed;
+      }
+      #map {
+        width: 100%;
+        height: 90%;
+      }
+      @media (max-device-width: 480px) {
+        body {
+          font-size: 2em;
+          height: 100%;
+          flex-direction: column; /* Switch to vertical stacking on mobile devices */
+        }
+        .left-panel {
+        width: 100%; /* Adjust width as needed */
+        height: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+        
+        }
+        .right-panel {
+        width: 100%; /* Adjust width as needed */
+        height: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #ededed;
+        }
+        
+      }
+    </style>
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div class="left-panel">
+      <div id="map" class="map"></div>
+      </br>
+      <button id="reportbutton">Report an incident</button>
+      
+    </div>
+    <div class="right-panel">
+      <div class="submission-panel">
+        <div id="submit"></div>
+      </div>
+      <div class="incidents-panel">
+        <h3>Time filter for Incidents</h3>
+        <form id="timeRangeForm">
+          <label for="startTime">Start Time:</label>
+          <input type="datetime-local" id="startTime" name="startTime">
+          </br>
+          <label for="endTime">End Time:</label>
+          <input type="datetime-local" id="endTime" name="endTime">
+          </br></br>
+          <input type="submit" value="Load Data！">
+        </form>
+        <p id="psdtime"></p>
+        <p>Please choose the start time and end time of incidents (We can only query data from at least 4 years ago)<br />
+        For example, if today is October 13, 2023, we can only query the data from 2016.1.1 to 2019.10.13<br />
+        This is a pseudo-real-time limitation that we do on the backend. </p>
+      </div>
+      
+    </div>
+    
+    
+    <script type="module" src="./main.js"></script>
+
+    
+
+  </body>
+</html>

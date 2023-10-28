@@ -1,0 +1,21 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "full-screen": "^1.0.0",
+    "ol": "latest",
+    "ol-ext": "^4.0.11",
+    "ol-layerswitcher": "^4.1.1",
+    "ol-popup": "^5.1.0",
+    "pg": "^8.11.3"
+  }
+}
