@@ -5,7 +5,7 @@
 
 
 ## Instructions
-Enter the path `api/` then execute `npm run test` to start backend server. Listen on port `3115`.<br>
+Enter the path `api` then execute `npm run test` to start backend server. Listen on port `3115`.<br>
 Enter the path `my-app` then execute `npm run start` to start frontend server. Listen on port `3015`.<br> 
 
 Notice: 
