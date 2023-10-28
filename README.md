@@ -10,4 +10,4 @@ Enter the path `my-app` then execute `npm run start` to start frontend server. L
 
 Notice: 
 - you may use your own API key to access some of the base maps. 
-- Requires node.js, PostgreSQL and PostGIS Extension (**v3.0.0 or later**).
+- Requires node.js, PostgreSQL and PostGIS Extension (**<u>v3.0.0 or later</u>**).
